@@ -43,6 +43,6 @@ class SupplierStorageImpl(private val client: HttpClient) : SupplierStorage {
     }
 
     override suspend fun deleteById(id: Long) {
-        client.delete("/books/$id")
+        client.delete("/suppliers/$id")
     }
 }
