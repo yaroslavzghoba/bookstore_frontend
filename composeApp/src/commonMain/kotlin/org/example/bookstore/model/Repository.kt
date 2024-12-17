@@ -42,11 +42,6 @@ interface Repository {
     suspend fun updateBook(book: Book): Book
 
     /**
-     * Delete all books from the storage.
-     */
-    suspend fun deleteAllBooks()
-
-    /**
      * Delete a book by its id from the storage.
      *
      * @param id An unique identifier of the book that must be deleted.
@@ -85,11 +80,6 @@ interface Repository {
      * @throws IllegalArgumentException If the identifier of the passed supplier is null.
      */
     suspend fun updateSupplier(supplier: Supplier): Supplier
-
-    /**
-     * Delete all suppliers from the storage.
-     */
-    suspend fun deleteAllSuppliers()
 
     /**
      * Delete a supplier by its id from the storage.
